@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Metro Navigation System</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Metro Navigation System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Metro Navigation System</h1>
-  <div id="input-form">
-    <label for="current-location">Current Location:</label>
-    <input type="text" id="current-location" placeholder="Enter your current location">
-    <label for="destination">Destination:</label>
-    <input type="text" id="destination" placeholder="Enter your destination">
-    <button id="submit-button">Find Route</button>
-  </div>
-  <div id="map"></div>
-  <script src="app.js"></script>
+    <div class="container">
+        <h1>Metro Navigation System</h1>
+        <img src="media/metro-map.png" alt="Metro Map" class="metro-map">
+        <label for="startStation">Start Station:</label>
+        <select id="startStation">
+            <option value="0">Station 0</option>
+            <option value="1">Station 1</option>
+            <option value="2">Station 2</option>
+            <option value="3">Station 3</option>
+            <option value="4">Station 4</option>
+            <option value="5">Station 5</option>
+            <option value="6">Station 6</option>
+            <option value="7">Station 7</option>
+            <option value="8">Station 8</option>
+            <option value="9">Station 9</option>
+            <option value="10">Station 10</option>
+            <option value="11">Station 11</option>
+            <option value="12">Station 12</option>
+            <option value="13">Station 13</option>
+            <option value="14">Station 14</option>
+            <option value="15">Station 15</option>
+            <option value="16">Station 16</option>
+            <option value="17">Station 17</option>
+            <option value="18">Station 18</option>
+            <option value="19">Station 19</option>
+            <option value="20">Station 20</option>
+        </select>
+
+        <label for="endStation">End Station:</label>
+        <select id="endStation">
+            <option value="0">Station 0</option>
+            <option value="1">Station 1</option>
+            <option value="2">Station 2</option>
+            <option value="3">Station 3</option>
+            <option value="4">Station 4</option>
+            <option value="5">Station 5</option>
+            <option value="6">Station 6</option>
+            <option value="7">Station 7</option>
+            <option value="8">Station 8</option>
+            <option value="9">Station 9</option>
+            <option value="10">Station 10</option>
+            <option value="11">Station 11</option>
+            <option value="12">Station 12</option>
+            <option value="13">Station 13</option>
+            <option value="14">Station 14</option>
+            <option value="15">Station 15</option>
+            <option value="16">Station 16</option>
+            <option value="17">Station 17</option>
+            <option value="18">Station 18</option>
+            <option value="19">Station 19</option>
+            <option value="20">Station 20</option>
+        </select>
+
+        <button id="findPathButton">Find Shortest Path</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
